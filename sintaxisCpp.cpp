@@ -8,11 +8,10 @@ int main ()
     /*
     * first: the first program "hello world"
     * and the /n called backSlash that mean space
-    * Finally other print that say "another one" like a song by MacDeMarco
-
+    
     ------------CODE--------------
     cout << "Hola, mundo \n";
-    cout << "another one"; <--- You uses "cout <<" for print in the screen 
+    You uses "cout <<" for print in the screen 
     -----------END---------------
     < I will tried write this in english ok >
 
@@ -20,9 +19,10 @@ int main ()
         For example:
 
         int a,b; <--- these ";" is important, you can define variables like this
+
         // Defines two  variables of typer int
 
-    ~ Yoy can define a variable for add up
+    ~ You can define a variable for add up
         For example:
         int a = 20;
         int b = 25;
@@ -542,10 +542,27 @@ int main ()
     a pointer (The asterisk is part of its type compound specifier). Don't confuse this with the 
     dereference operator, which is used to obtain the value located at the specified address. 
     They are simply two different things represented with the same sign.
+    Dereferencing
+
+
+    The dereference operator (*) is basically an alias for the variable the pointer points to.
+    For example:
+    int x = 5;
+    int *p = &x;
+
+    x = x + 4;
+    x = *p + 4;
+    *p = *p + 4;
     
+
+    All three of the preceding statements are equivalent, and return the same result. 
+    We can access the variable by dereferencing the variable's pointer.
+    As p is pointing to the variable x, dereferencing the pointer (*p) is representing exactly 
+    the same as the variable x.
+
     */
    
-   
-    return 0; //this should always be 
+  
+    return 0; //this should always be like this
     
 } 
